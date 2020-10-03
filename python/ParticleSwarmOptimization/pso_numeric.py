@@ -92,13 +92,10 @@ class pso(object):
         for particle in range(self.num_particles):                   #Para cada passaro do bando.
             #Calcula a distancia euclidiana para a posicao da comida.
             #dist = self.__distEuclidean(particles[particle], objective)
-            dist = self.__Rosenbrock(particles[particle])
-            print('Dist = %g'%dist)
+            dist = self.__Rosenbrock(particles[particle])            
             if gbestVal > dist:        #Se e menor que a ja existente
                 gbest = particle;          #Substitui.
-                gbestVal = dist;
-                print('gbest = %s' %gbest)
-                print('gbestVal = %g' %gbestVal)
+                gbestVal = dist;                
          
         return gbest,gbestVal       
     

@@ -60,11 +60,7 @@ class pso(object):
 
     def __velocityMatching(self,particles,velocities):
  
-        nears = self.__nearest(particles)
-        print(nears)
-        print(self.num_particles)
-        print(self.num_vars)
-        print(velocities)
+        nears = self.__nearest(particles)        
         for particle in range(self.num_particles):
             for var in range(self.num_vars):
                 velocities[particle,var] = velocities[nears[particle],var]

@@ -22,7 +22,7 @@ if __name__ == '__main__':
  
     #define as constantes da colonia
     NUM_BIRDS = 10
-    NUM_INTERACTIONS = 1000
+    NUM_INTERACTIONS = 1
     MAX_SIZE = 10
     MAX_ERRO = 0.01
     NUM_VARS = 2
@@ -32,7 +32,6 @@ if __name__ == '__main__':
     
     #Define a posicao da comida aleatoriamente
     roostPoint = [1.0,1.0] #Minimo global para a funcao Rosenbrock 
-    print(roostPoint)
     TARGET = Rosenbrock(roostPoint[0],roostPoint[1])
      
     swarm = pso(NUM_BIRDS,NUM_VARS,NUM_INTERACTIONS,OPTION)
